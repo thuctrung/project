@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var moneyDay;
+        var moneyWeek;
+        var moneyMonth;
+        var weight = prompt("So can nang: ");
+        moneyDay = prompt("Nhap vao so tien trong 1 ngay: "+"0");
+        moneyWeek =prompt("Nhap vao so tien trong 1 tuan: "+"0");
+        moneyMonth =prompt("Nhap vao so tien trong 1 thang: "+"0");
+        var NgayO =prompt("Nhập ngày ở: ","0");
+        var tuan =Math.floor(NgayO/7);
+        var ngay = NgayO-(tuan*7);
+        var tien =tuan*moneyWeek +ngay*moneyDay;
+        document.write("số tiền ở lại là: "+tien);
+
+    </script>
+</body>
+</html>
