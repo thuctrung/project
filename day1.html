@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <p id="demo"></p>
+    <p id="damo"></p>
+</head>
+<body>
+    <script >var date =prompt();
+        var myBirthDate = new Date(date);
+        var curDate = new Date();
+        alert(myBirthDate.getDay());
+        var diff = Math.floor(curDate.getTime()-myBirthDate.getTime());
+        var d = 1000*60^60^24*365;
+        var old=diff/d;
+        alert(parseInt(old));
+        document.getElementById("demo").innerHTML="Em được sinh ra vào thứ: "+myBirthDate.getDay();
+        document.getElementById("damo").innerHTML="Hôm ni em đươc: "+myBirthDate.getDay();
+        </script>
+</body>
+</html>

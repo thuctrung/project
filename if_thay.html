@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type ="number" name ="" id ="nhap">
+    <button type ="button"onclick="myFunction()">Try it</button>
+    <p id="kq">Đây là kết quả</p>
+    <script>
+        function myFunction(){
+            var number=document.getElementById("nhap").value;
+            var greeting;
+            if(number>0){
+                greeting="Bạn đã nhập vào số dương";
+            }else if(number==0){
+                greeting="Bạn đã nhập vào số 0";
+            }else
+                greeting="Bạn đã nhập số âm";
+        document.getElementById("kq").innerHTML= greeting;
+    }
+    </script>
+</body>
+</html>

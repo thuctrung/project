@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <p id="demo"></p>
+    <p id="damo"></p>
+</head>
+<body>
+    <script>
+            var d = new Date();
+            var nam=d.getFullYear();
+            var thang=d.getMonth();
+            var thu=d.getDay();
+            var ngay=d.getDate();
+            day = prompt("Mời bạn nhập nhập vào năm sinh của bạn: ",);
+            if( d!=null || curDayName!=null){
+                document.getElementById("demo").innerHTML="Em được sinh ra vào thứ"+d.getDay;
+                document.getElementById("damo").innerHTML="Hôm nay em được chừng ni tuổi"+(currentYear-nam);
+            }
+    </script>
+</body>
+</html>
